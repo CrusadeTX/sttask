@@ -17,7 +17,7 @@ public String retrieveGreeting() {
 	LocalDateTime currentDateTime = LocalDateTime.now();
 	DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 	String formattedDateTime = currentDateTime.format(dateTimeFormatter);
-	return "Greetings Visitor! The current date and time is:"+ formattedDateTime;
+	return "Greetings Visitor! The current date and time is: "+ formattedDateTime;
 }
 
 }
