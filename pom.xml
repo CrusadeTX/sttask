@@ -51,27 +51,11 @@
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>com.vaadin</groupId>
-						<artifactId>vaadin-maven-plugin</artifactId>
-						<version>${vaadin.version}</version>
-						<executions>
-							<execution>
-								<goals>
-									<goal>build-frontend</goal>
-								</goals>
-								<phase>compile</phase>
-							</execution>
-						</executions>
-						<configuration>
-							<productionMode>true</productionMode>
-						</configuration>
-					</plugin>
-					<plugin>
 						<groupId>com.heroku.sdk</groupId>
 						<artifactId>heroku-maven-plugin</artifactId>
 						<version>2.0.11</version>
 						<configuration>
-							<appName>vaadin-test-project-pu</appName>
+							<appName>sttask</appName>
 							<processTypes>
 								<web>java -Xmx1g -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 -jar -Dserver.port=$PORT ${full-artifact-name}</web>
 							</processTypes>
