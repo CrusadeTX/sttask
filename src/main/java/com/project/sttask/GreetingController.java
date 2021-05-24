@@ -12,7 +12,7 @@ import java.time.format.DateTimeFormatter;
 @RestController
 public class GreetingController {
 	
-@GetMapping(path="/greeting")
+@GetMapping(path="/")
 public String retrieveGreeting() {
 	LocalDateTime currentDateTime = LocalDateTime.now();
 	DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
